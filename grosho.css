@@ -1,0 +1,101 @@
+body {
+  background-color: #121212;
+  scroll-behavior: smooth;
+  color: white;
+  font: 1em sans-serif;
+  display: grid;
+  place-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+/* Custom Scroll Bar ============================== */
+// For Firefox
+:root {
+  scrollbar-color: #666 #222 !important;
+  scrollbar-width: thin !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #222;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 50px;
+}
+
+.parent {
+  display: grid;
+  place-items: center;
+  margin-top: 50px;
+  width: 600px;
+  padding: 20px;
+
+  // Input
+  input {
+    all: unset;
+    border-bottom: 3px solid orange;
+    width: 300px;
+    padding: 10px;
+    font: bold 1.5em monospace;
+    margin-bottom: 30px;
+  }
+
+  // Buttons
+  .buttons {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    button {
+      all: unset;
+      background-color: #e7305b;
+      color: #000;
+      border-radius: 50px;
+      font: bold 1.3em monospace;
+      padding: 10px 30px;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        box-shadow: 2px 2px 15px 2px #e7305b;
+      }
+    }
+  }
+
+  // Results
+  .results {
+    width: 500px;
+    padding: 30px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    box-shadow: 2px 2px 15px 2px #ff5e62;
+
+    font: bold 1.8em monospace;
+    color: #000;
+
+    span {
+      span {
+        color: white;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
